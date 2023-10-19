@@ -131,6 +131,19 @@ export const Form = (props) => {
               helperText={showErrors ? errors.firstName : ""}
             />
           </FormControl>
+          <FormControl fullWidth className="form-control">
+            <TextField
+              required
+              error={showErrors ? errors.firstName : ""}
+              value={formData.firstName}
+              id="firstName"
+              label="First Name"
+              variant="outlined"
+              placeholder="Enter First Name"
+              onChange={(e) => onFormChange("firstName", e.target.value)}
+              helperText={showErrors ? errors.firstName : ""}
+            />
+          </FormControl>
           <FormControl fullWidth>
             <TextField
               required
