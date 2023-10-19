@@ -139,7 +139,7 @@ export const Form = (props) => {
               id="firstName"
               label="First Name"
               variant="outlined"
-              placeholder="Enter First Name"
+              placeholder="Enter Third Name"
               onChange={(e) => onFormChange("firstName", e.target.value)}
               helperText={showErrors ? errors.firstName : ""}
             />
